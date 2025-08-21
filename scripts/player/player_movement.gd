@@ -1,8 +1,13 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+@export var MOVE_MAX_VEL := 300.0
+@export var MOVE_ACC := 30.0
+@export var FLY_MAX_VEL := -400.0
+@export var FLY_ACC := 40.0
+
+@export var MAX_ENERGY := 1.5
+@export var MAX_HEALTH := 1
 
 
 func _physics_process(delta: float) -> void:
